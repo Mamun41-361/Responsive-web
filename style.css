@@ -1,9 +1,11 @@
 :root{
     --selection:rgb(92, 8, 116);
+    --headerbackgroundcolor:rgb(0, 0, 0);
+    --navbarlistcolors:#679fef;
 }
 
 *,
-*::before *::after{
+*::after *::before{
     font-family: 'Satoshi', sans-serif;
     box-sizing: border-box;
     margin: 0;
@@ -26,5 +28,98 @@ html{
     scroll-behavior: smooth;
 }
    /*-----------------before--------------------- basic style---------------*/
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+   header .mainheader{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    background-color:var(--headerbackgroundcolor) ;
+    color: whitesmoke;
+    z-index: 10000;
+    height: 15%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 15% 45% 15% 25%;
+    align-items: center;
+    justify-content: center;
+   
+   }
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+   font-size: 50px;
+    text-decoration: none;
+    overflow: hidden;
+  
+
+}
+.navbar{
+   color:var(--navbarlistcolor);
+   font-size: 20px;
+   margin: 5px;
+   padding: 5px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+  .navbar a{
+    color: var(--navbarlistcolor);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    text-transform: capitalize;
+    display: flex;
+   align-items: center;
+   justify-content: right;
+}
+   
+
+
+.icon{
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+   
+    
+
+}
+.icon i{
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+   color: #679fef;
+  
+}
+.search{
+   
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 3%;
+    color: var(--navbarlistcolors);
 
    
+}
+.search #searchbar{
+    
+    font-size: 17px;
+    border:2px solid var(--navbarlistcolors);
+    border-radius: 5px;
+    background-color: var(--headerbackgroundcolor);
+    color: aliceblue;
+   
+}
+#searchicon{
+    font-size: 20px;
+    margin:2px;
+    color: var(--navbarlistcolors);
+}
