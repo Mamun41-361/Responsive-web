@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root{
-    --selection:rgb(92, 8, 116);
-    --headerbackgroundcolor:rgb(0, 0, 0);
-    --navbarlistcolors:#679fef;
+    --divsection:rgb(89, 4, 113);
+    --textcolors:rgb(0, 0, 0);
+    --backgroundcolors:#063c89;
+
+   
+    --conteinarsize-width-lg:80%;
+    --conteinarsize-width-tb:90%;
+    --conteinarsize-width-ph:95%;
+   
 }
 
 *,
 *::after *::before{
-    font-family: 'Satoshi', sans-serif;
+    
+     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
