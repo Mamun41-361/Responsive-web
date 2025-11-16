@@ -55,10 +55,12 @@ html{
     overflow-x: hidden;  
 }
 
-section{
-    width: 90%;
-    height: 80%;
-    background-color: #000000;
+section{            /*-----------Div name:---mainsection 1 ------*/
+    width: 100%;
+    height: 80%;  
+    display: flex;
+    justify-content: center;
+
 }
 
  /*--------------------before--------------------- basic style---------------*/
@@ -77,3 +79,18 @@ section{
     background-color:var(--backgroundcolorsHeader) ;
    }
 
+ section .mainsection1{
+    width: 80%;
+    height: 100%;
+   
+}
+section .mainsection2{
+    width: 80%;
+    height: 100%;
+   
+}
+section .mainsection3{
+    width: 80%;
+    height: 100%;
+   
+}
